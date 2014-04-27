@@ -1,7 +1,7 @@
 ##coursera  Assingment2
 ##student: bliss3596
 
-cacheSolve<-function(x)    ## Return the inverse matrix of x
+cacheSolve<-function(x)      ## Return the inverse matrix of x
 { 
   invm <- x$getinv()
 
@@ -11,7 +11,7 @@ cacheSolve<-function(x)    ## Return the inverse matrix of x
               return(invm)       
   }
    data <- x$get()           ## Recall x matrix
-   invm<- solve(data)           ## Calculate inverse
+   invm<- solve(data)        ## Calculate inverse
    x$setinv(invm)
    invm
 }
