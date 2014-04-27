@@ -3,15 +3,15 @@
 
 cacheSolve<-function(x)      ## Return the inverse matrix of x
 { 
-  invm <- x$getinv()
+  im <- x$getinv()
 
-  if(!is.null(invm))
+  if(!is.null(im))
   {
       message("getting cached inverse matrix")
-              return(invm)       
+              return(im)       
   }
    data <- x$get()           ## Recall x matrix
-   invm<- solve(data)        ## Calculate inverse
-   x$setinv(invm)
-   invm
+   im<- solve(data)          ## Calculate inverse
+   x$setinv(im)
+   im
 }
