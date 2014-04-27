@@ -1,0 +1,19 @@
+##coursera  Assingment2
+##student: bliss3596
+
+cacheSolve<-function(x)    ## Return the inverse matrix of x
+{ 
+   invm <- x$getinv()
+
+  if(!is.null(invm))
+  {
+      message("getting cached inverse matrix")
+              return(invm)       
+              }
+            data <- x$get()           ## Recall x matrix
+        invm<- solve(data)           ## Calculate inverse
+        x$setinv(invm)
+        invm
+
+                
+}
